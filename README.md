@@ -1,7 +1,7 @@
 # Privacy Policy for Insignia (Android)
 
-**Last updated:** May 18, 2026  
-**App version:** 1.5.3 (see the [Google Play](https://play.google.com) listing for the build you installed)
+**Last updated:** August 10, 2026  
+**App version:** 1.5.5 (see the [Google Play](https://play.google.com) listing for the build you installed)
 
 **Platform:** Insignia is distributed **only on Android** via Google Play. This policy applies to the Android app.
 
@@ -36,6 +36,7 @@ The app uses Android **SharedPreferences** (via Flutter’s `shared_preferences`
 | **Rewarded ad progress** | Count how many rewarded ads you watched toward unlocking ad-free (default target: 10). |
 | **Optional support ad count** | Count voluntary “support” rewarded ads after you are ad-free (used only for **Support Squad** rank display—gamification, not a real military status). |
 | **“Don’t show again” for ad-free prompt** | Remember if you dismissed the post-quiz suggestion to go ad-free in Settings. |
+| **App launch count** | Count cold app starts so we know when to show Google Play’s in-app review prompt (5th launch, then every 10th launch after). |
 
 **Quiz session data** (current score, questions in progress) lives in app memory during a quiz and is not uploaded by us.
 
@@ -86,7 +87,7 @@ The app declares the `com.google.android.gms.permission.AD_ID` permission so adv
 - On Android: **Settings → Google → Ads** (or your device manufacturer’s privacy settings) to limit ad personalization.  
 - Read Google’s privacy and ad information: [Google Privacy Policy](https://policies.google.com/privacy), [How Google uses information from sites or apps that use our services](https://policies.google.com/technologies/partner-sites), [AdMob & Ads](https://support.google.com/admob/answer/6128543).
 
-The app does **not** currently integrate a separate Google User Messaging Platform (UMP) consent form in code; where required by law, the AdMob SDK or Android may still present privacy or consent flows.
+**Consent (UMP):** On startup, the app initializes Google's User Messaging Platform (UMP) and requests a consent update; where required by law (e.g. for users in the EEA/UK), Google's consent form is shown automatically before any ad-related data processing occurs. Ads are only requested once Google's SDK reports that ad requests are permitted for that user (`ConsentInformation.canRequestAds()`). If the consent flow cannot complete quickly (e.g. no network), the app proceeds after a short timeout without requesting ads.
 
 ### 3.2 In-app purchases (Google Play)
 
@@ -96,11 +97,15 @@ You can buy a **non-consumable “ad-free”** product or **restore** a previous
 - We only receive what Google Play provides to the app (e.g. that a purchase succeeded) to unlock ad-free on your device.  
 - See [Google Play’s privacy information](https://policies.google.com/privacy) and your [Google Account](https://myaccount.google.com/) for payment and purchase data.
 
-### 3.3 Google Play Store
+### 3.3 Google Play in-app review
+
+Periodically (starting on your 5th app launch, then every 10th launch after that), the app asks Android to show **Google Play’s built-in “rate this app” prompt** (or opens the Play Store listing if that prompt isn’t available). This uses Google’s in-app review API — we do not see or store your rating or review text; it goes directly to Google Play. Only the local launch counter described in Section 1 is used to decide when to ask.
+
+### 3.4 Google Play Store
 
 Downloading, updating, or reviewing the app through Google Play involves Google’s own data practices, as described in Google’s policies.
 
-### 3.4 Flutter framework
+### 3.5 Flutter framework
 
 The app is built with [Flutter](https://flutter.dev). Standard tooling may collect diagnostics during **development**; production Android builds on Google Play do not send your personal data to us through Flutter by default.
 
@@ -109,7 +114,7 @@ The app is built with [Flutter](https://flutter.dev). Standard tooling may colle
 ## 4. Internet and offline use
 
 - **Offline:** Insignia content (images, rank data, quiz logic) is bundled in the app and works without internet for learning and quizzing.  
-- **Online required for:** Loading and showing **AdMob** ads, completing **Google Play** purchases, and **restore purchases** in Settings.  
+- **Online required for:** Loading and showing **AdMob** ads, completing **Google Play** purchases, **restore purchases** in Settings, and showing the **Google Play in-app review** prompt.  
 - The app does **not** upload your language or Support Squad counts to the developer.
 
 ---
@@ -176,7 +181,7 @@ We may update this Privacy Policy when the Android app changes (e.g. new ad type
 
 Questions about this Privacy Policy or Insignia’s data practices:
 
-- **Email:** [app.insignia@proton.me](mailto:app.insignia@proton.me)  
+- **Email:** [janis.ringli@gmail.com](mailto:janis.ringli@gmail.com)  
 - **Google Play:** You can also send feedback via the store listing or your Play account support options.
 
 ---
