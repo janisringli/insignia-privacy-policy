@@ -203,7 +203,7 @@ We may update this Privacy Policy when the Android app changes (e.g. new ad type
 
 Questions about this Privacy Policy or Insignia’s data practices:
 
-- **Email:** [janis.ringli@gmail.com](mailto:janis.ringli@gmail.com)  
+- **Email:** [janis.ringli@gmail.com](mailto:app.insignia@proton.me)  
 - **Google Play:** You can also send feedback via the store listing or your Play account support options.
 
 ---
