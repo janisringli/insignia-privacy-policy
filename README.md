@@ -1,7 +1,7 @@
 # Privacy Policy for Insignia (Android)
 
-**Last updated:** October 3, 2026  
-**App version:** 2.0.0 (see the [Google Play](https://play.google.com) listing for the build you installed)
+**Last updated:** November 3, 2026  
+**App version:** 2.0.1 (see the [Google Play](https://play.google.com) listing for the build you installed)
 
 **Platform:** Insignia is distributed **only on Android** via Google Play. This policy applies to the Android app.
 
@@ -19,7 +19,7 @@ We do **not** operate our own user accounts, login servers, or analytics backend
 | **Our own servers** | We do **not** collect or store your personal data on servers we run. |
 | **On your device** | Language, quiz settings, ad-free status, ad progress, optional “Support Squad” progress, your RS countdown, and your packing list are saved **locally** on your phone or tablet (see below). |
 | **Notifications** | Optional. If you allow them, the RS countdown schedules reminders **locally** on your device; no push server is involved. |
-| **Advertising** | **Google AdMob** may show ads and process data (e.g. Android Advertising ID) under [Google’s policies](https://policies.google.com/privacy). For the quiz ad, AdMob may also let **Meta Audience Network** bid to show an ad (see 3.2). |
+| **Advertising** | **Google AdMob** may show ads and process data (e.g. Android Advertising ID) under [Google’s policies](https://policies.google.com/privacy). AdMob may also let **Meta Audience Network** (see 3.2), **Liftoff Monetize** (see 3.3) and **InMobi** (see 3.4) bid to show an ad. |
 | **Privacy settings** | Where required (EEA, UK, Switzerland), you can change your ad consent at any time in **Settings → Privacy settings**. |
 | **Purchases** | **Google Play** processes payments and related data when you buy or restore “ad-free.” |
 | **Offline use** | Browsing insignia, quizzes, and the guide work **offline**; **ads and Play Store purchases need an internet connection**. |
@@ -77,7 +77,7 @@ The Android app integrates **Google Mobile Ads (AdMob)**.
 
 **When ads may appear**
 
-- **Interstitial ad:** After you finish a quiz and leave the results screen, or when you leave a quiz after answering at least a third of its questions (at most one per quiz round; only if you have **not** unlocked ad-free).  
+- **Interstitial ad:** After you finish a quiz and leave the results screen, when you leave a quiz after answering at least a third of its questions, or after you finish a radio alphabet exercise (at most one per round; only if you have **not** unlocked ad-free). So the ad can appear without a delay, it is requested in the background once you have answered a third of the questions (if none is available, once more at the end of the round); the ad request therefore takes place during the quiz, before the ad is shown.  
 - **Rewarded ad (unlock):** In Settings, you can watch rewarded ads to progress toward **ad-free** (alternative to buying ad-free).  
 - **Rewarded ad (optional support):** If you are already ad-free, you may **voluntarily** watch an extra rewarded ad in Settings to advance **Support Squad** ranks. This is optional and only affects in-app gamification.
 
@@ -97,18 +97,36 @@ The app declares the `com.google.android.gms.permission.AD_ID` permission so adv
 - On Android: **Settings → Google → Ads** (or your device manufacturer’s privacy settings) to limit ad personalization.  
 - Read Google’s privacy and ad information: [Google Privacy Policy](https://policies.google.com/privacy), [How Google uses information from sites or apps that use our services](https://policies.google.com/technologies/partner-sites), [AdMob & Ads](https://support.google.com/admob/answer/6128543).
 
-**Consent:** The app uses Google’s **User Messaging Platform (UMP)**. Where required by law (e.g. in the EEA, the UK, and Switzerland), a consent form is shown before ads are requested, and ads are only loaded once Google’s consent check allows it. The Mobile Ads SDK (including the Meta adapter, see 3.2) is only started after this consent check allows ads; starting it does not load an ad. Your choice applies to Google and to every ad partner listed in the form, including Meta.
+**Consent:** The app uses Google’s **User Messaging Platform (UMP)**. Where required by law (e.g. in the EEA, the UK, and Switzerland), a consent form is shown before ads are requested, and ads are only loaded once Google’s consent check allows it. The Mobile Ads SDK (including the Meta, Liftoff and InMobi adapters, see 3.2–3.4) is only started after this consent check allows ads; starting it does not load an ad. Your choice applies to Google and to every ad partner listed in the form, including Meta, Liftoff and InMobi.
 
 ### 3.2 Meta Audience Network (via AdMob mediation)
 
-For the **interstitial ad after a quiz**, AdMob uses **mediation**: besides Google, **Meta Audience Network** (Meta Platforms Ireland Ltd. / Meta Platforms, Inc.) may bid to show the ad. The rewarded ads in Settings are served by Google only.
+For the **interstitial ads** (after a quiz and after a radio alphabet exercise), AdMob uses **mediation**: besides Google, **Meta Audience Network** (Meta Platforms Ireland Ltd. / Meta Platforms, Inc.) may bid to show the ad. Meta does not take part in the rewarded ads in Settings.
 
 - To take part in the auction, the Meta Audience Network SDK included in the app may receive device and app information such as the **Android Advertising ID** (where permitted), IP address, device model, operating system, app version, and ad interaction data (e.g. impressions and clicks), for ad delivery, measurement, and fraud prevention.  
 - In the EEA, UK, and Switzerland, Meta only takes part if your consent choice in the privacy form allows it; you can change this in **Settings → Privacy settings**.  
 - Meta may cache video ads on your device through a local connection (`127.0.0.1`); this traffic does not leave your device.  
 - Meta processes this data under its own policy: [Meta Privacy Policy](https://www.facebook.com/privacy/policy/).
 
-### 3.3 In-app purchases (Google Play)
+### 3.3 Liftoff Monetize (formerly Vungle, via AdMob mediation)
+
+For the **interstitial and rewarded ads**, AdMob may also let **Liftoff Monetize** (Liftoff Mobile, Inc., formerly Vungle) bid to show the ad.
+
+- To take part in the auction, the Liftoff Monetize SDK included in the app may receive device and app information such as the **Android Advertising ID** (where permitted), IP address, device model, operating system, language, app version, and ad interaction data (e.g. impressions and clicks), for ad delivery, measurement, and fraud prevention.  
+- In the EEA, UK, and Switzerland, Liftoff only takes part if your consent choice in the privacy form allows it; you can change this in **Settings → Privacy settings**.  
+- Liftoff processes this data under its own policy: [Liftoff Privacy Policy](https://liftoff.io/privacy-policy/).
+
+### 3.4 InMobi (via AdMob mediation)
+
+For the **interstitial and rewarded ads**, AdMob may also let **InMobi** (InMobi Pte. Ltd.) bid to show the ad.
+
+- To take part in the auction, the InMobi SDK included in the app may receive device and app information such as the **Android Advertising ID** (where permitted), IP address, device model, operating system, language, app version, and ad interaction data (e.g. impressions and clicks), for ad delivery, measurement, and fraud prevention.  
+- In the EEA, UK, and Switzerland, InMobi only takes part if your consent choice in the privacy form allows it; you can change this in **Settings → Privacy settings**.  
+- InMobi processes this data under its own policy: [InMobi Privacy Policy](https://www.inmobi.com/privacy-policy).
+
+**Partners of these ad networks (resellers):** Google, Meta, Liftoff, and InMobi are the only ad companies whose software is included in the app. To fill an ad, they may pass the ad request to their own advertising partners (e.g. ad exchanges and resellers), which bid on it. These partners do not run any code in the app; they only receive the bid information the ad network shares with them (such as the Advertising ID where permitted, an approximate location derived from the IP address, and device and app details) under that network's terms and policies. In the EEA, the UK, and Switzerland, the privacy form (**Settings → Privacy settings**) lists every ad partner that may process your data and lets you decide for each one. Which partners each network works with is set out in its own privacy policy (see 3.1–3.4).
+
+### 3.5 In-app purchases (Google Play)
 
 You can buy a **non-consumable “ad-free”** product or **restore** a previous purchase through **Google Play**.
 
@@ -116,13 +134,13 @@ You can buy a **non-consumable “ad-free”** product or **restore** a previous
 - We only receive what Google Play provides to the app (e.g. that a purchase succeeded) to unlock ad-free on your device.  
 - See [Google Play’s privacy information](https://policies.google.com/privacy) and your [Google Account](https://myaccount.google.com/) for payment and purchase data.
 
-### 3.4 Google Play Store
+### 3.6 Google Play Store
 
 Downloading, updating, or reviewing the app through Google Play involves Google’s own data practices, as described in Google’s policies.
 
 At a few positive moments (for example after a good quiz result or a completed packing list, at most every 14 days, and only for installs from Google Play) the app may ask Google Play to show its **In-App Review** dialog. Google decides whether the dialog appears; your rating and review go directly to Google Play, and the app does not learn whether or how you rated it.
 
-### 3.5 Flutter framework
+### 3.7 Flutter framework
 
 The app is built with [Flutter](https://flutter.dev). Standard tooling may collect diagnostics during **development**; production Android builds on Google Play do not send your personal data to us through Flutter by default.
 
@@ -150,7 +168,7 @@ We do **not** request access to your camera, microphone, contacts, or precise lo
 
 ## 6. Children’s privacy
 
-Insignia is educational and does not require registration. Because the app can show **personalized or non-personalized ads** through AdMob and Meta Audience Network (depending on configuration and region), parents and guardians should supervise use by children and use Android ad and privacy controls. We do not knowingly collect personal information from children on our own servers.
+Insignia is educational and does not require registration. Because the app can show **personalized or non-personalized ads** through AdMob, Meta Audience Network, Liftoff Monetize, and InMobi (depending on configuration and region), parents and guardians should supervise use by children and use Android ad and privacy controls. We do not knowingly collect personal information from children on our own servers.
 
 ---
 
@@ -162,6 +180,8 @@ Insignia is educational and does not require registration. Because the app can s
 | Scheduled notifications | Until they are shown, you remove the countdown, or you uninstall |
 | AdMob / Google Play data | Per Google’s retention policies |
 | Meta Audience Network data | Per Meta’s retention policies |
+| Liftoff Monetize data | Per Liftoff’s retention policies |
+| InMobi data | Per InMobi’s retention policies |
 | Purchases | In your Google Play account history; **Restore purchases** in Settings re-applies ad-free on a new install |
 
 ---
@@ -174,16 +194,18 @@ Depending on where you live (e.g. **GDPR**, **UK GDPR**, **CCPA/CPRA**), you may
 - **Ad consent:** Change it at any time in **Settings → Privacy settings** (shown where required by law).  
 - **AdMob / Google:** Use [Google’s privacy tools](https://myaccount.google.com/data-and-privacy) and Android ad settings.  
 - **Meta:** See [Meta’s privacy tools](https://www.facebook.com/privacy/policy/) for data Meta processes as an ad partner.  
+- **Liftoff:** See the [Liftoff Privacy Policy](https://liftoff.io/privacy-policy/) for data Liftoff processes as an ad partner.  
+- **InMobi:** See the [InMobi Privacy Policy](https://www.inmobi.com/privacy-policy) for data InMobi processes as an ad partner.  
 - **Purchases:** Manage in [Google Play](https://play.google.com/store/account) or your Google Account; use **Restore purchases** in the app for ad-free.  
 - **Questions:** Contact us (see below). We will respond within a reasonable time.
 
-We do **not** sell your personal information. Google may process data for **ads** and **payments**, and Meta for **ads**, as described above.
+We do **not** sell your personal information. Google may process data for **ads** and **payments**, and Meta, Liftoff, and InMobi for **ads**, as described above.
 
 ---
 
 ## 9. International transfers
 
-AdMob, Google Play, and Meta Audience Network may process data in countries outside your own (e.g. the United States). Google and Meta provide their own safeguards and terms for such processing.
+AdMob, Google Play, Meta Audience Network, Liftoff Monetize, and InMobi may process data in countries outside your own (e.g. the United States or Singapore). Google, Meta, Liftoff, and InMobi provide their own safeguards and terms for such processing.
 
 ---
 
@@ -203,13 +225,13 @@ We may update this Privacy Policy when the Android app changes (e.g. new ad type
 
 Questions about this Privacy Policy or Insignia’s data practices:
 
-- **Email:** [app.insignia@proton.me](mailto:app.insignia@proton.me)  
+- **Email:** [janis.ringli@gmail.com](mailto:janis.ringli@gmail.com)  
 - **Google Play:** You can also send feedback via the store listing or your Play account support options.
 
 ---
 
 ## 13. Legal references (transparency)
 
-This Android app is designed to minimize data collection by the developer. Third-party processing for **advertising** (AdMob, Meta Audience Network via AdMob mediation) and **in-app purchases** (Google Play) is disclosed above so you can make informed choices. The Google Play listing and in-app experience should be read together with this document.
+This Android app is designed to minimize data collection by the developer. Third-party processing for **advertising** (AdMob; Meta Audience Network, Liftoff Monetize, and InMobi via AdMob mediation) and **in-app purchases** (Google Play) is disclosed above so you can make informed choices. The Google Play listing and in-app experience should be read together with this document.
 
-**Insignia (Android)** — educational content about military insignia and a guide for military service; optional ads (Google AdMob, Meta Audience Network via mediation) with in-app privacy settings, and ad-free purchase via Google Play; optional local notifications for the RS countdown; optional **Support Squad** gamification after ad-free.
+**Insignia (Android)** — educational content about military insignia and a guide for military service; optional ads (Google AdMob; Meta Audience Network, Liftoff Monetize, and InMobi via mediation) with in-app privacy settings, and ad-free purchase via Google Play; optional local notifications for the RS countdown; optional **Support Squad** gamification after ad-free.
